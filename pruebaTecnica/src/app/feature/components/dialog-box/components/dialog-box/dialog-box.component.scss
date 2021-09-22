@@ -1,0 +1,25 @@
+@import  'src/assets/styles/styles_colors';
+
+.mat-dialog-content{
+  background: $blue;
+  font-style: none;
+}
+
+::ng-deep .mat-dialog-container{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.btn-footer{
+  display: flex;
+  justify-content: center ;
+}
+
+.btn-save{
+  background: $aquablue;
+}
+
+.btn-cancel{
+  background: $crimson;
+  color: $black;
+}

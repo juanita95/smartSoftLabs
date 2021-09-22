@@ -1,0 +1,12 @@
+@import  'src/assets/styles/styles_colors';
+
+main{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: $background-to-botton;
+}
+
+.content{
+  width: 100%;
+}

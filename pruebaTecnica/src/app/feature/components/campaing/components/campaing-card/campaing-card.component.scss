@@ -1,0 +1,91 @@
+@import  'src/assets/styles/styles_colors';
+
+::ng-deep thead{
+  visibility: collapse;
+}
+
+.card{
+  overflow: auto;
+}
+
+.table-campaing {
+  width: 100%;
+}
+
+.mat-column-ImgCamp {
+  width: 10%;
+  border-right: 0.2em solid $pink;
+  text-align: center;
+}
+
+.mat-column-CampData {
+  width: 40%;
+  border-right: 0.1em solid $pink;
+  text-align: center;
+}
+
+.mat-column-Datacamp {
+  width: 40%;
+  border-right: 0.1em solid $pink;
+  text-align: center;
+}
+
+.mat-column-action {
+  width: 5%;
+  text-align: center;
+}
+
+tr.mat-row, tr.mat-footer-row {
+  background: $aquablue;
+}
+
+.th.mat-header-cell:first-of-type,
+td.mat-cell:first-of-type,
+td.mat-footer-cell:first-of-type{
+  padding-left: 0px !important;
+}
+
+.th.mat-header-cell:last-of-type,
+td.mat-cell:last-of-type,
+td.mat-footer-cell:last-of-type{
+  padding-right: 0px !important;
+}
+
+.fa-snowflake-o{
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.fa-pencil-square-o{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.fa-trash-o{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+li{
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+span{
+  color: $pink;
+}
+
+li p{
+  margin: 2px;
+}
+
+.fa{
+  color: $pink
+}
+

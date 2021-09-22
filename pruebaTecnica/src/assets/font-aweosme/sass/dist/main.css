@@ -1,0 +1,47 @@
+body {
+  background: #333333;
+  color: #ffffff;
+}
+
+body .responsive {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+body .responsive .navbar {
+  border-bottom: #c0392b 3px solid;
+}
+
+body .responsive #home-section img {
+  position: relative;
+  width: 100%;
+  opacity: 0.2;
+}
+
+body .responsive #home-section .container1 {
+  position: absolute;
+  padding: 10px;
+  top: 10%;
+  width: 80%;
+}
+
+body .responsive #home-section .container1 .col-md-4 .card {
+  background-color: #c0392b;
+}
+
+body .responsive footer .container2 {
+  text-align: center;
+  padding: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  body .responsive {
+    width: 100%;
+  }
+  body .responsive #home-section .container1 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

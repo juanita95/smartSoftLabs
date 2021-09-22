@@ -1,0 +1,8 @@
+<div class="card-columns m-3">
+  <button class="btn mx-3"  (click)="openDialog('Add',{})" >
+    <i class="fa fa-plus" aria-hidden="true"></i>
+  </button>
+
+  <app-campaing-card (updateDateEvent)="updateCampaing()" [campaing]="camp" *ngFor="let camp of campaings"></app-campaing-card>
+</div>
+

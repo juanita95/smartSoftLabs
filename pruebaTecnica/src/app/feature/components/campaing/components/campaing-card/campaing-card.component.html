@@ -1,0 +1,110 @@
+<div class="card m-3">
+  <table mat-table [dataSource]="campains" class="mat-elevation-z8 table-campaing">
+    <ng-container matColumnDef="ImgCamp">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">
+        <div>
+          <span>Covid-19</span>
+          <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+        </div>
+     </td>
+    </ng-container>
+
+    <ng-container matColumnDef="CampData">
+      <th mat-header-cell *matHeaderCellDef> </th>
+      <td mat-cell *matCellDef="let element">
+        <ul>
+          <li>
+            <div class="m-2">
+              <i class="fa fa-arrows-h" aria-hidden="true"></i>
+            </div>
+
+            <div>
+              <span>Titulo de Campaña</span>
+              <p>{{element.TitleCamp}}</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="m-2">
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+
+            <div>
+              <span>Estado de Campaña</span>
+              <p>{{element.StatusCamp}}</p>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="m-2">
+              <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+            </div>
+
+            <div>
+              <span>Fecha y Hora de creación</span>
+              <p>{{element.DateCreation | date}}</p>
+            </div>
+          </li>
+
+        </ul>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Datacamp">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">
+        <ul>
+          <li>
+            <div class="m-2 p-2">
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+
+            <div>
+              <span>Tipo de la Campaña</span>
+              <p>{{element.Camptype | uppercase  }} </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="m-2 p-2">
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </div>
+
+            <div>
+              <span>Número de usuarios impactados</span>
+              <p>{{element.NumUsers | number}}</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="m-2">
+              <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+            </div>
+
+            <div>
+              <span>Fecha y Hora de envio</span>
+              <p>{{element.DateSend | date}}</p>
+            </div>
+          </li>
+        </ul>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef> Action </th>
+      <td mat-cell *matCellDef="let element" class="action-link">
+        <a (click)="openDialog('Update',element)">
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        </a>
+        <a (click)="openDialog('Delete',element)">
+          <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </a>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

@@ -1,0 +1,86 @@
+@import  'src/assets/styles/styles_colors';
+
+@media screen and (min-width: 600px) {
+  mat-sidenav {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  mat-sidenav {
+    width: 50%;
+  }
+}
+
+::ng-deep .mat-drawer-inner-container {
+  overflow: hidden !important;
+}
+
+mat-sidenav {
+  margin-top: 56.5px;
+  border-right: none;
+  background: $background-to-botton;
+  color: $white;
+  padding: 16px;
+  text-align: center;
+}
+
+.content {
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: lightgray;
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+
+.menu-a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  justify-content: center;
+  margin: 5%;
+  padding: 20%;
+}
+
+.designation {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: $white;
+}
+
+.mat-drawer-container {
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  display: contents;
+  overflow: hidden;
+}
+
+.btn{
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 45%;
+  background: $aquablue;
+  color: $black;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0px, 1px, 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+}

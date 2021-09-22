@@ -1,0 +1,44 @@
+@import  'src/assets/styles/styles_colors';
+
+@media screen and (max-width: 580px) {
+  .nav-item{
+    width: 100%;
+  }
+
+  li {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .nav-item{
+    width: 25%;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.navbar{
+  background: $background-to-left !important;
+}
+
+ul{
+  width: 100%;
+}
+
+.fa{
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $blue;
+}
+
+span{
+  color: $white;
+}

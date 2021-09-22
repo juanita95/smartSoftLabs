@@ -1,0 +1,9 @@
+@import  'src/assets/styles/styles_colors';
+
+.btn{
+  background: $aquablue;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px, 1px, 10px rgba(0, 0, 0, 0.3);
+}

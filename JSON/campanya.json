@@ -1,0 +1,60 @@
+{
+  "Campanyas": [
+    {
+      "TitleCamp": "Vacunate ya",
+      "StatusCamp": "Programada",
+      "DateCreation": "2020-12-07T23:00:00.000Z",
+      "Camptype": "Promoción",
+      "NumUsers": 0,
+      "DateSend": "2020-12-07T23:00:00.000Z",
+      "id": 2,
+      "action": "Update"
+    },
+    {
+      "TitleCamp": "Aislamiento preventivo",
+      "StatusCamp": "Programada",
+      "DateCreation": "2020-12-07T23:00:00.000Z",
+      "Camptype": "Promoción",
+      "NumUsers": 0,
+      "DateSend": "2020-12-07T23:00:00.000Z",
+      "id": 3
+    },
+    {
+      "TitleCamp": "Lavate las manos",
+      "StatusCamp": "Programada",
+      "DateCreation": "2020-12-07T23:00:00.000Z",
+      "Camptype": "Promoción",
+      "NumUsers": 0,
+      "DateSend": "2020-12-07T23:00:00.000Z",
+      "id": 4
+    },
+    {
+      "TitleCamp": "AG007",
+      "StatusCamp": "Programada",
+      "DateCreation": "2020-12-07T23:00:00.000Z",
+      "Camptype": "Promoción",
+      "NumUsers": 0,
+      "DateSend": "2020-12-07T23:00:00.000Z",
+      "id": 5
+    },
+    {
+      "TitleCamp": "AG007",
+      "StatusCamp": "Completada",
+      "DateCreation": "2020-12-07T23:00:00.000Z",
+      "Camptype": "Promoción",
+      "NumUsers": 0,
+      "DateSend": "2020-12-07T23:00:00.000Z",
+      "id": 6
+    },
+    {
+      "action": "Add",
+      "TitleCamp": "lavate las manos",
+      "StatusCamp": "inactiva",
+      "DateCreation": "2021-09-09",
+      "Camptype": "covid",
+      "NumUsers": 50,
+      "DateSend": "2021-09-01",
+      "id": 7
+    }
+  ]
+}

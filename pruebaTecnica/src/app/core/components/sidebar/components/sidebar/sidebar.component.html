@@ -1,0 +1,52 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+    <a mat-3 routerLink="/home/dashboard" class="menu-a" (click)="openCloseSideBar()">
+      <div class="nav-menu">
+        <i class="fa fa-line-chart mx-2" aria-hidden="true"></i>
+        <span>Dashboard</span>
+      </div>
+    </a>
+
+    <a mat-a routerLink="/home/campaing" class="menu-a" (click)="openCloseSideBar()">
+      <div class="nav-menu">
+        <i class="fa fa-star-half-o mx-2" aria-hidden="true"></i>
+        <span>Campañas</span>
+      </div>
+    </a>
+
+    <a mat-a class="menu-a" (click)="openCloseSideBar()">
+      <div class="nav-menu">
+        <i class="fa fa-user mx-2" aria-hidden="true"></i>
+        <span>Pacientes</span>
+      </div>
+    </a>
+
+    <a mat-a class="menu-a" (click)="openCloseSideBar()">
+      <div class="nav-menu">
+        <i class="fa fa-mobile mx-2" aria-hidden="true"></i>
+        <span>Programas</span>
+      </div>
+    </a>
+
+    <a mat-a class="menu-a" (click)="openCloseSideBar()">
+      <div class="nav-menu">
+        <i class="fa fa-volume-control-phone mx-2" aria-hidden="true"></i>
+        <span>Monitoreo</span>
+      </div>
+    </a>
+
+    <a mat-a class="menu-a" (click)="openCloseSideBar()">
+      <div class="nav-menu">
+        <i class="fa fa-area-chart mx-2" aria-hidden="true"></i>
+        <span>Reportes y Estadisticas</span>
+      </div>
+    </a>
+
+  </mat-sidenav>
+
+</mat-sidenav-container>
+
+<a *ngIf="!sidenav.opened" class="btn" (click)="sidenav.toggle()">
+  <i class="fa fa-bars" aria-hidden="true"></i>
+</a>
