@@ -7,57 +7,58 @@ import { DialogBoxComponent } from '../../../dialog-box/components/dialog-box/di
 @Component({
   selector: 'app-campaing-card',
   templateUrl: './campaing-card.component.html',
-  styleUrls: ['./campaing-card.component.scss']
+  styleUrls: ['./campaing-card.component.scss'],
 })
 export class CampaingCardComponent implements OnInit {
-
   @Output() updateDateEvent = new EventEmitter<Campaing>();
 
-  @Input() campaing : Campaing[]= []
-  campains= []
+  @Input() campaing: Campaing[] = [];
+  campains = [];
   displayedColumns: string[] = ['ImgCamp', 'CampData', 'Datacamp', 'action'];
 
   constructor(
     private campaingService: CampaingService,
-    public dialog: MatDialog) { }
+    public dialog: MatDialog
+  ) {}
 
   ngOnInit(): void {
     this.campains = this.campains.concat(this.campaing);
   }
 
-    openDialog(action,obj) {
-    obj.action = action;
+  openDialog(action: string, obj: Campaing): void {
     const dialogRef = this.dialog.open(DialogBoxComponent, {
       width: '250px',
-      data:obj,
+      data: {
+        action,
+        campaing: obj,
+      },
     });
 
-    dialogRef.afterClosed().subscribe(result => {
-      if(!result){
+    dialogRef.afterClosed().subscribe((result) => {
+      if (!result) {
         return;
       }
       result.event === 'Update'
-       ? this.updateRowData(result.data)
-       : this.deleteRowData(result.data);
+        ? this.updateRowData(result.data)
+        : this.deleteRowData(result.data);
     });
   }
 
-
-  updateRowData(campaing: Campaing){
-    if(!campaing){
+  updateRowData(campaing: Campaing) {
+    if (!campaing) {
       return;
     }
-    this.campaingService.updateCampaing(campaing).subscribe(()=>{
+    this.campaingService.updateCampaing(campaing).subscribe(() => {
       this.updateDateEvent.emit();
-    })
+    });
   }
 
-  deleteRowData(campaing: Campaing){
-    if(!campaing){
+  deleteRowData(campaing: Campaing) {
+    if (!campaing) {
       return;
     }
-    this.campaingService.deleteCampaing(campaing.id).subscribe(()=>{
+    this.campaingService.deleteCampaing(campaing.id).subscribe(() => {
       this.updateDateEvent.emit();
-    })
+    });
   }
 }

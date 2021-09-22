@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./feature/feature.module').then(m => m.FeatureModule),
+    loadChildren: () => import('./features/feature.module').then(m => m.FeatureModule),
     canActivate: [AuthGuard],
   },
   {

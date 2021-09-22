@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CampaingComponent } from './components/campaing/components/campaing/campaing.component';
-import { DashboardComponent } from './components/dashboard/components/dashboard/dashboard.component';
-import { HomeComponent } from './components/home/components/home/home.component';
+import { CampaingComponent } from './campaing/components/campaing/campaing.component';
+import { DashboardComponent } from './dashboard/components/dashboard/dashboard.component';
+import { HomeComponent } from './home/components/home/home.component';
 
 const routes: Routes= [
   {

@@ -1,26 +1,26 @@
 <div mat-dialog-content>
   <h1 mat-dialog-title> {{title}} Campaña </h1>
-  <mat-form-field *ngIf="action != 'Delete'; else elseTemplate">
+  <mat-form-field *ngIf="data.action != 'Delete'; else elseTemplate">
     <input placeholder="Titulo Campaña" matInput type="text" [(ngModel)]="local_data.TitleCamp">
   </mat-form-field>
 
-  <mat-form-field *ngIf="action != 'Delete'">
+  <mat-form-field *ngIf="data.action != 'Delete'">
     <input placeholder="Estado Campaña" matInput type="text" [(ngModel)]="local_data.StatusCamp">
   </mat-form-field>
 
-  <mat-form-field *ngIf="action != 'Delete'">
+  <mat-form-field *ngIf="data.action != 'Delete'">
     <input placeholder="Fecha y Hora Creación" matInput type="date" [(ngModel)]="local_data.DateCreation">
   </mat-form-field>
 
-  <mat-form-field *ngIf="action != 'Delete'; ">
+  <mat-form-field *ngIf="data.action != 'Delete'; ">
     <input placeholder="Tipo Campaña" matInput type="text" [(ngModel)]="local_data.Camptype">
   </mat-form-field>
 
-  <mat-form-field *ngIf="action != 'Delete'">
+  <mat-form-field *ngIf="data.action != 'Delete'">
     <input placeholder="Num Usuario Impactados"  matInput type="number" [(ngModel)]="local_data.NumUsers">
   </mat-form-field>
 
-  <mat-form-field *ngIf="action != 'Delete'">
+  <mat-form-field *ngIf="data.action != 'Delete'">
     <input placeholder="Fecha y Hora de Envio"matInput type="date" [(ngModel)]="local_data.DateSend">
   </mat-form-field>
 

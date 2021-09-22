@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
 import { CoreRoutingModule } from './core-routing.module';
-import { HeaderComponent } from './components/header/components/header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/components/login/login.component';
-import { SidebarComponent } from './components/sidebar/components/sidebar/sidebar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { SidebarModule } from 'ng-sidebar';
